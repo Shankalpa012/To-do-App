@@ -1,0 +1,94 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image:linear-gradient(120deg,#ff9a9e,#fad0c4);
+    color:white;
+    font-family:  Arial, Helvetica, sans-serif;
+    
+}
+
+header{
+    font-size: 20px;
+}
+
+header,form{
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+form input, form button{
+    padding: 3px;
+    border:none;
+    font-size:20px;
+    background:white;
+}
+form button{
+    color:tomato;
+    cursor: pointer;
+    transition:all 0.3s ease ;
+    background-color: brown;
+}
+form button:hover{
+    background:tomato;
+    color:white;
+}
+.todo-contain{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.todo-list{
+    list-style: none;
+    min-width: 30%;
+}
+.todo{
+    margin: 6px;
+    background: white;
+    color: black;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+.todo li{
+    flex:1;
+}
+
+.delete-btn, .check-btn{
+    border: none;
+    color: peachpuff;
+    padding: 8px;
+    cursor: pointer;
+    background-color:hotpink;
+}
+
+.delete-btn{
+    color:black;
+    background-color:orange;
+}
+
+.list{
+    padding-left: 5px;
+}
+
+.fa-trash, 
+.fa-check{
+    pointer-events: none;
+}
+.completed{
+    text-decoration: line-through;
+    color:red;
+    opacity: 0.5;
+}
+
+.effect{
+    transform:translateY(10rem) rotateZ(20deg);
+    opacity: 0;
+}
